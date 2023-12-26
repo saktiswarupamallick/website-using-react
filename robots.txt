@@ -1,0 +1,18 @@
+User-agent: *
+Disallow:
+
+User-agent: *
+Sitemap: https://www.morsystems.in/sitemap.xml
+
+
+
+#        _
+#       [ ]
+#      (   )
+#       |>|
+#    __/===\__
+#   //| o=o |\\
+#  <  | o=o |   >
+#     \=====/
+#    / / | \ \
+#   <_________>

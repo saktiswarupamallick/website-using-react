@@ -1,0 +1,194 @@
+/* PricingPage.css */
+
+/* Colors */
+:root {
+  --primary-color: yellow;
+  --secondary-color: black;
+
+  --light-text-color: #ffffff;
+  --dark-text-color: #333333;
+}
+
+/* Default styles */
+.pricing-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* ... (rest of the CSS) ... */
+
+.plan-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.plan-box {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  border: 3px solid black;
+  padding: 27px;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.plan-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.plan-box .plan-description {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 15px;
+}
+.plan-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.plan-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.plan-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.plan-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-box ul li {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.plan-box button {
+  background-color: yellow;
+  
+  color: black;
+  bottom:10px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.plan-box button:hover {
+  background-color: var(--secondary-color);
+}
+/* PricingPage.css */
+
+/* ... (previous CSS code) ... */
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+
+  border-radius: 34px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 38px;
+  background-color: #fff;
+  border-radius: 34px;
+  transition: transform 0.3s ease;
+}
+
+.slider:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transform: translateX(2px);
+  transition: transform 0.3s ease;
+}
+
+input:checked + .slider {
+  background-color: var(--secondary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(42px);
+}
+/* PricingPage.css */
+
+/* ... (previous CSS code) ... */
+
+@media (max-width: 1024px) {
+  .plan-box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .plan-box {
+    width: 100%;
+  }
+
+  .plan-box h3 {
+    font-size: 20px;
+  }
+
+  .plan-box h2 {
+    font-size: 24px;
+    color:black;
+  }
+
+  .plan-box ul li {
+    margin-bottom: 3px;
+  }
+
+  .plan-box button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
